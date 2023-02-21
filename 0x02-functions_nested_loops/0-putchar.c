@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - Prints _putchar.
- *
+ * main - main function
+ *_putchar: print '_putchar' and a new line
  * Retun: Always 0.
  */
 

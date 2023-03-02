@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
- * rev_string - print reverse characters.
- * @s: validate the character
- * Return: Nothing.
+ * string_toupper - Function that reverses the content of an array of integers.
+ *
+ * @s: s is the array
+ *
+ * Return: Norhing.
  */
 
-void rev_string(char *s)
+char *string_toupper(char *s)
 {
-	int i = 0, a = 0, Aux;
-
+	int i = 0;
 
 	while (s[i] != '\0')
 	{
-		i++;
+		if ((s[i] >= 97) && (s[i] <= 122))
+		{
+			s[i] = s[i] - 32;
+		}
+	i++;
 	}
-	i--;
-	while (i > a)
-	{
-		Aux = s[i];
-		s[i--] = s[a];
-		s[a++] = Aux;
-	}
+	return (s);
 }

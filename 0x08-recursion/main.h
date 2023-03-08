@@ -17,5 +17,7 @@ int my_pal(char *s, int l);
 int _sqrt(int x, int i);
 int hai(int n, int d);
 int is_palindrome(char *s);
+int findsrc(char *s, char c, int i, int p);
+int wildcmp(char *s1, char *s2);
 
 #endif
